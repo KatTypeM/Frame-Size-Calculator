@@ -1,0 +1,139 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="style.css" />
+	
+	<!-- jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<title>Frame Size (for ideal weight range) Calculator </title>
+ 
+ 
+</head>
+<body>
+
+	<header>
+		<!-- Nav menu basic -->
+		<nav>
+			<div id="nav-page-title-left">Frame Size (for ideal weight range) Calculator</div>
+			<div id="nav-control" class="page-menu">
+				
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Add Page Here</a></li>
+					<li><a href="#">Add Page Here</a></li>
+				</ul>
+			</div>
+			
+			<div class="container-burger nav-margin-right">
+				<div class="container-burger-rotate">
+					<div class="burger-line line1"></div>
+					<div class="burger-line line2"></div>
+					<div class="burger-line line3"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+	
+	<br>
+	<br>
+	<br>
+	
+	<section class="app-container">	
+		<article class="container-frame-size">
+			<h3 id="title-title">Frame Size Calculator</h3>
+			<!-- checkbox us or metric  -->
+			<div>
+				<input type='checkbox' class="cb-frame-us-metric" id='cb-frame-us'>
+				<label for="cb-frame-us" >US</label>
+				<input type='checkbox' class="cb-frame-us-metric" id='cb-frame-metric'>
+				<label for="cb-frame-metric">Metric</label>
+			</div>
+			<!-- input boxes -->
+			<div class="input-boxes">
+				<label for='input-wrist-circum' id="label-input-wrist-circum">Wrist Circumference:</label>
+				<input type='text' id='input-wrist-circum' size='4'>
+			</div>
+			<div class="input-boxes">
+				<label for='input-height-frame-size' id="label-height-frame-size">Height:</label>
+				<input type='text' id='input-height-frame-size' size='5'>
+			</div>
+			<!-- checkbox male or female -->
+			<div class="input-boxes">
+				<input type='checkbox' class="cb-frame-size-male-female" id='cb-frame-size-male'>
+				<label for="cb-frame-size-male">Male</label>
+				<input type='checkbox' class="cb-frame-size-male-female" id='cb-frame-size-female'>
+				<label for="cb-frame-size-female">Female</label>
+			</div>
+			<!-- button calculate -->
+			<button id='btn-calc-body-frame' class="btn-css">Calc Body Frame</button>
+			<!-- results area -->
+			<h4 id="title-result">Body Frame Size Result</h4>
+			<div id='display-body-frame'>Please enter data into fields.</div>
+			<br>
+			<!-- button reset -->
+			<button class="btn-css" id="btn-reset-frame-size">Reset</button> 
+			<br>
+			<!-- notes for the app -->
+			<p id="title-notes"><i>Notes:</i></p>
+			<p><i>*Body frame size chart from <a href="https://medlineplus.gov/ency/imagepages/17182.htm">Medlineplus.gov</a>.</i></p>
+			<p><i>**Ideal body weight is from the Metropolitan Life Insurance Company weight chart based on mortality. The weights indicate a person will have the lowest mortality per frame size. <a href="https://www.idealbodyweightchart.com/">Ideal Body Weight Chart</a></i></p>
+			
+		</article>
+	</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+	</main>
+	
+	<!-- Custom footer -->
+	<footer class="footer mt-auto py-3 bg-dark">
+		<div class="container">
+			<span class="text-muted">
+			<div class="row">
+				<div class="col-md-5">
+					Site Map
+				</div>
+				
+				<div class="col-md-1 border-end border-secondary"></div>
+				<div class="col-md-1"></div>
+				
+				<div class="col-md-5">
+					<p class="my-1">Social Media</p>
+					<p class="my-1">Copyright &copy <span id="footer-copyright-date"></span></p>
+				</div>
+			</div>
+			</span>
+		</div>
+	</footer>
+	
+	<!-- bootstrap js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- app js -->
+	<script src="main.js"></script>
+ </body>
+ </html>
